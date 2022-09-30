@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Saas-Web-Slicing-with-React/static/css/main.02a91326.css",
+    "main.js": "/Saas-Web-Slicing-with-React/static/js/main.e8880fc7.js",
+    "static/js/787.9fc9a8be.chunk.js": "/Saas-Web-Slicing-with-React/static/js/787.9fc9a8be.chunk.js",
+    "static/media/Group5445.png": "/Saas-Web-Slicing-with-React/static/media/Group5445.682da409b630869049d1.png",
+    "static/media/gambarhero.png": "/Saas-Web-Slicing-with-React/static/media/gambarhero.ba492f95f91af1c37000.png",
+    "static/media/Rectangle84.png": "/Saas-Web-Slicing-with-React/static/media/Rectangle84.6dd91ef2e6ad6a6902fd.png",
+    "static/media/bforefooter.png": "/Saas-Web-Slicing-with-React/static/media/bforefooter.a8505953dfe65619185c.png",
+    "static/media/Logosbrand.png": "/Saas-Web-Slicing-with-React/static/media/Logosbrand.98d3e10a002e0c6a00a0.png",
+    "static/media/Vector.png": "/Saas-Web-Slicing-with-React/static/media/Vector.2533a3887429e7421b5e.png",
+    "static/media/Rectangle236.png": "/Saas-Web-Slicing-with-React/static/media/Rectangle236.856aac490084c8d08cbd.png",
+    "index.html": "/Saas-Web-Slicing-with-React/index.html",
+    "main.02a91326.css.map": "/Saas-Web-Slicing-with-React/static/css/main.02a91326.css.map",
+    "main.e8880fc7.js.map": "/Saas-Web-Slicing-with-React/static/js/main.e8880fc7.js.map",
+    "787.9fc9a8be.chunk.js.map": "/Saas-Web-Slicing-with-React/static/js/787.9fc9a8be.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.02a91326.css",
+    "static/js/main.e8880fc7.js"
+  ]
+}
