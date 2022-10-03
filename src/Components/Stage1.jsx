@@ -16,7 +16,7 @@ const Stage1 = () => {
               <div className="text-[55px] leading-[63px]">
                 SaaS Delivery Management Software
               </div>
-              <div className="text-[20px] py-[32px] opacity-[0.8]">
+              <div className="text-[20px] py-[32px] md:opacity-[0.8]">
                 Track and optimize routes in real-time
               </div>
               <div>
