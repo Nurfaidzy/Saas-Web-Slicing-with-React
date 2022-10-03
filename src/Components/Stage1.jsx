@@ -12,8 +12,8 @@ const Stage1 = () => {
       >
         <div className="pt-[10%]">
           <div className="flex justify-between px-[166px] py-[49px]">
-            <div className="w-[581px] h-[183px] py-[63px]  text-white">
-              <div className="text-[65px] leading-[63px]">
+            <div className=" py-[63px]  text-white">
+              <div className="text-[55px] leading-[63px]">
                 SaaS Delivery Management Software
               </div>
               <div className="text-[20px] py-[32px] opacity-[0.8]">
@@ -37,7 +37,7 @@ const Stage1 = () => {
             </div>
             <div>
               <img
-                className="w-[774px] h-[509.46px]"
+                className="2xl:py-0 py-[10%] w-fit h-fit"
                 src={Heroimage}
                 alt="images"
               />
