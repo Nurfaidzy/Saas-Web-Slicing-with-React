@@ -1,14 +1,25 @@
 import back from "./Img/bforefooter.png";
 import iconplay from "./Img/iconplay.png";
+import { motion } from "framer-motion";
 const Stage6 = () => {
   return (
-    <div
+    <motion.div
       className="md:bg-cover bg-auto bg-no-repeat"
       style={{
         backgroundImage: "url(" + back + ")",
       }}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
+      viewport={{ once: true }}
     >
-      <div className="md:px-[167px] py-[180px] text-white">
+      <motion.div
+        className="md:px-[167px] py-[180px] text-white"
+        initial={{ x: -200 }}
+        whileInView={{ x: 0 }}
+        transition={{ duration: 0.5 }}
+        viewport={{ once: true }}
+      >
         <div className="md:font-bold text-[30px] text-center md:text-[40px] md:w-[515px] md:leading-[61px] ">
           Advanced Fleet Tracking Solution Tracker
         </div>
@@ -27,8 +38,8 @@ const Stage6 = () => {
             </li>
           </ol>
         </div>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
 export default Stage6;

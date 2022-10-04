@@ -3,10 +3,16 @@ import Grocery from "./Img/Grocery.png";
 import Food from "./Img/Food.png";
 import Courier from "./Img/Courier.png";
 import Logistics from "./Img/Logistics.png";
+import { motion } from "framer-motion";
 const Stage2 = () => {
   return (
     <div className=" flex justify-center md:-mt-[4%]">
-      <div>
+      <motion.div
+        initial={{ opacity: 0, y: 200 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        viewport={{ once: true }}
+      >
         <div className="flex justify-center">
           <img className=" rounded-[50px]" src={Logosbrand} alt="Logosbrand" />
         </div>
@@ -114,7 +120,7 @@ const Stage2 = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

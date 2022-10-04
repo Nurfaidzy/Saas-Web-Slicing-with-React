@@ -1,9 +1,16 @@
 import frame from "./Img/Frame.png";
 import kurang from "./Img/kurang.png";
 import tambah from "./Img/tambah.png";
+import { motion } from "framer-motion";
 const Stage5 = () => {
   return (
-    <div className="">
+    <motion.div
+      className=""
+      initial={{ opacity: 0, y: 200 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      viewport={{ once: true }}
+    >
       <div className="bg-[#F1F6FF] ">
         <div className="flex justify-center">
           <img src={frame} alt="frame" />
@@ -89,7 +96,7 @@ const Stage5 = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

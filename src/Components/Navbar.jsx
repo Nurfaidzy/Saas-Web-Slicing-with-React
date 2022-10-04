@@ -1,6 +1,7 @@
 import Logo from "./Img/Logo.png";
 import { AiOutlineMenu } from "react-icons/ai";
 import { useState } from "react";
+import { motion } from "framer-motion";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const klik = () => {
@@ -45,9 +46,17 @@ const Navbar = () => {
           </div>
         </div>
         {open && (
-          <div className="bg-black/60 h-screen">
+          <motion.div
+            className="bg-black/60 h-screen"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+          >
             <div className="flex justify-end">
-              <div className="bg-white h-screen absolute w-[250px]">
+              <motion.div
+                className="bg-white h-screen absolute w-[250px]"
+                initial={{ x: 100 }}
+                whileInView={{ x: 0 }}
+              >
                 <div className="flex justify-end py-[20px] px-[20px]">
                   <ol className="grid grid-cols-1 gap-[10px] text-[30px] text-end font-bold text-[#5752DA] ">
                     <li>Solution</li>
@@ -66,9 +75,9 @@ const Navbar = () => {
                     </li>
                   </ol>
                 </div>
-              </div>
+              </motion.div>
             </div>
-          </div>
+          </motion.div>
         )}
       </div>
     </>

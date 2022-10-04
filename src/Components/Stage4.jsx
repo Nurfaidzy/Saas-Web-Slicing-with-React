@@ -3,6 +3,7 @@ import Tali from "./Img/tali.png";
 import realtime from "./Img/realtime.png";
 import Proof from "./Img/Proof.png";
 import lonceng from "./Img/lonceng.png";
+import { motion } from "framer-motion";
 const Stage4 = () => {
   return (
     <div className="h-full w-full bg-[#F1F6FF]  ">
@@ -13,14 +14,20 @@ const Stage4 = () => {
         }}
       >
         <div className="md:py-[20%] py-[300px]">
-          <div className="flex justify-center ">
+          <motion.div
+            className="flex justify-center "
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+          >
             <h1
               className="w-[552px] h-[108px]  text-center text-[30px] 
             md:text-[40px] md:leading-[54px] text-white md:font-bold"
             >
               All in one proof for final mile delivery solutions
             </h1>
-          </div>
+          </motion.div>
           <div className="flex justify-center pt-[26px]">
             <div className="bg-white w-[84px] h-[4px] rounded-[15px]">
               &nbsp;
@@ -35,7 +42,13 @@ const Stage4 = () => {
             >
               <div className="flex justify-center pt-[20px]">
                 <div className="grid md:grid-cols-3 grid-cols-1 md:gap-[119px] text-white">
-                  <div className="">
+                  <motion.div
+                    className=""
+                    initial={{ opacity: 0, y: 200 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5 }}
+                    viewport={{ once: true }}
+                  >
                     <div className="flex justify-center">
                       <img
                         src={realtime}
@@ -50,8 +63,14 @@ const Stage4 = () => {
                       By adopting real time delivery tracking software, final
                       mile delivery management has become easier
                     </div>
-                  </div>
-                  <div className="">
+                  </motion.div>
+                  <motion.div
+                    className=""
+                    initial={{ opacity: 0, y: 200 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.7 }}
+                    viewport={{ once: true }}
+                  >
                     <div className="flex justify-center">
                       <img
                         src={Proof}
@@ -66,8 +85,14 @@ const Stage4 = () => {
                       The system works with the electonic and digital signatures
                       of the reipient on reciving the delivery item
                     </div>
-                  </div>
-                  <div className="">
+                  </motion.div>
+                  <motion.div
+                    className=""
+                    initial={{ opacity: 0, y: 200 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1 }}
+                    viewport={{ once: true }}
+                  >
                     <div className="flex justify-center">
                       <img
                         src={lonceng}
@@ -82,7 +107,7 @@ const Stage4 = () => {
                       By adopting real time delivery tracking software, final
                       mile delivery management has become easier
                     </div>
-                  </div>
+                  </motion.div>
                 </div>
               </div>
             </div>

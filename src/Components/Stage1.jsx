@@ -1,6 +1,7 @@
 import Heroimage from "./Img/gambarhero.png";
 import Background from "./Img/Vector.png";
 import iconplay from "./Img/iconplay.png";
+import { motion } from "framer-motion";
 const Stage1 = () => {
   return (
     <div>
@@ -10,7 +11,13 @@ const Stage1 = () => {
           backgroundImage: "url(" + Background + ")",
         }}
       >
-        <div className="pt-[10%]">
+        <motion.div
+          className="pt-[10%]"
+          initial={{ opacity: 0, y: 200 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+        >
           <div className="md:flex md:justify-between px-[20px] md:px-[166px] py-[49px]">
             <div className=" md:py-[63px]  text-white">
               <div className="text-[55px] leading-[63px]">
@@ -43,7 +50,7 @@ const Stage1 = () => {
               />
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

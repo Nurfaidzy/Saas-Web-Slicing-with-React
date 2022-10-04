@@ -1,5 +1,6 @@
 import Rectangle from "./Img/Rectangle236.png";
 import Group5445 from "./Img/Group5445.png";
+import { motion } from "framer-motion";
 const Stage3 = () => {
   return (
     <div className="md:h-full md:w-full  ">
@@ -9,7 +10,13 @@ const Stage3 = () => {
           backgroundImage: "url(" + Rectangle + ")",
         }}
       >
-        <div className="md:py-[500px] py-[200px]">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+          className="md:py-[500px] py-[200px]"
+        >
           <div className="md:text-[40px] text-[20px] text-center text-[#2E526B] font-bold">
             Delivery Business Interfaces
           </div>
@@ -20,7 +27,7 @@ const Stage3 = () => {
           </div>
           <div className="flex justify-center">
             <div className="md:flex md:justify-center grid grid-cols-1 text-center w-[300px] gap-[18px] pt-[48px]">
-              <div className="py-[17px] px-[40px] bg-[#37C8DC] rounded-[15px] text-[21px] text-white">
+              <div className="py-[32px] px-[40px] bg-[#37C8DC] rounded-[15px] text-[21px] text-white">
                 Dasboard
               </div>
               <div className="py-[17px] px-[40px] rounded-[20px] text-[21px] text-[#2E526B]  border-2">
@@ -34,7 +41,7 @@ const Stage3 = () => {
           <div className="flex justify-center pt-[44px] ">
             <img src={Group5445} alt="Group5445" />
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
